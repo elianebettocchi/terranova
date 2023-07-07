@@ -97,6 +97,13 @@ button {
     background-position: center center;
     background-attachment: fixed;
 }
+.pergaminho{
+    background-image: url("./img/pergaminho.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
 .bege{
     background-color: #cfc8b0;
 }
