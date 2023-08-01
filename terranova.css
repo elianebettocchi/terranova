@@ -3,7 +3,7 @@ body {
     padding: 0;
     text-align: center;
     min-height: 100vh;
-    background-color: #cfc8b0;
+    background-color: rgb(0,0,0,0);
     font-family: 'Almendra SC', Courier, monospace;
     color: #330;
 }
@@ -100,12 +100,16 @@ button {
 .pergaminho{
     background-image: url("./img/pergaminho.png");
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: repeat;
     background-position: center center;
     background-attachment: scroll;
 }
 .bege{
     background-color: #cfc8b0;
+}
+.dropdown-menu{
+    background-color: rgb(0,0,0,0);
+    border: 0px;
 }
 img{
     width: 100%;
