@@ -29,7 +29,7 @@ button {
 }
 .light {
     font-size: 100%;
-    border-radius: 15px;
+    border-radius: 5px;
     font-family: 'Almendra SC', Courier, monospace;
     font-weight: bold;
     width: auto;
@@ -99,6 +99,13 @@ button {
 }
 .pergaminho{
     background-image: url("./img/pergaminho.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+.biblioteca{
+    background-image: url("./img/biblioteca.jpg");
     background-size: cover;
     background-repeat: repeat;
     background-position: center center;
@@ -187,4 +194,18 @@ a:hover{
     header.masthead h1, header.masthead .h1 {
       font-size: 3.5rem;
     }
+  }
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .bottom {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
   }
