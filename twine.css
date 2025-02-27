@@ -1,0 +1,78 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+    min-height: 100vh;
+    background-color: #cfc8b0;
+    font-family: 'Almendra SC', Courier, monospace;
+    color: #330;
+    background-image: url("./img/pergaminho.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+img{
+    width: 100%;
+}
+.small {
+    width: 50%;
+}
+.img2 {
+    width: 70%;
+}
+.height {
+    width: auto;
+    height: 100%
+}
+a {
+    color: darkgoldenrod;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+.card{
+    background-color: #cfc8b0;
+    color: #330;
+}
+.buzio {
+    width: 20px;
+}
+.a-red{
+    color: #900;
+}
+.a-green{
+    color: green;
+}
+.a-grey{
+    color: grey;
+}
+.a-gold{
+    color: darkgoldenrod;
+}
+.transparent{
+    background-color: rgb(0,0,0,0);
+}
+.navbar-toggler{
+    width: auto;
+}
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .bottom {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+.corners {
+    border-radius: 25px;
+}
