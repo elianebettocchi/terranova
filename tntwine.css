@@ -121,6 +121,9 @@ img{
 .img2 {
     width: 70%;
 }
+.icon {
+    width: 25px;
+}
 .height {
     width: auto;
     height: 100%
