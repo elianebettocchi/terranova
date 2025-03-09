@@ -12,8 +12,7 @@ body {
     background-attachment: fixed;
 }
 ul {
-    list-style-image: url('./img/arrow.png');
-    width: 5px;
+    list-style-type: none;
   }
 button {
     font-size: 100%;
