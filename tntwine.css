@@ -13,6 +13,7 @@ body {
 }
 ul {
     list-style-image: url('./img/arrow.png');
+    width: 10%;
   }
 button {
     font-size: 100%;
