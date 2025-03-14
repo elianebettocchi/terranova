@@ -183,3 +183,6 @@ a:hover{
 .corners {
     border-radius: 25px;
 }
+.indent {
+    text-indent: 30%;
+  }
