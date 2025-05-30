@@ -76,7 +76,7 @@ button {
 }
 .fundo{
     background-image: url("./img/palimpsesto.png");
-    background-size: contain;
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
     background-attachment: scroll;
