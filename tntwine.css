@@ -75,7 +75,7 @@ button {
     background-color: rgba(118, 1, 1, 0.6);
 }
 .fundo{
-    background-image: url("./img/palimpsesto.png");
+    background-image: url("./img/frame.png");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
