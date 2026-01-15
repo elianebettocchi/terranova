@@ -1,0 +1,184 @@
+body {
+    background-image: url("./img/cowries.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+    font-family: 'Courier New', Courier, monospace;
+    color: #330;
+}
+ul {
+    list-style-type: none;
+  }
+button {
+    font-size: 100%;
+    border-radius: 5px;
+    font-family: 'Almendra SC', Courier, monospace;
+    font-weight: bold;
+    width: 30px;
+    color: white;
+    border: grey solid 1px;
+    background-color: rgb(255, 217, 0, 0.6);
+}
+.light {
+    font-size: 100%;
+    border-radius: 5px;
+    font-family: 'Almendra SC', Courier, monospace;
+    font-weight: bold;
+    width: auto;
+    color: #330;
+    border: solid grey 0px;
+    background-color: rgb(207, 200, 176, 0.6);
+}
+.dark {
+    font-size: 100%;
+    border-radius: 5px;
+    font-family: 'Almendra SC', Courier, monospace;
+    font-weight: bold;
+    width: 100%;
+    color: white;
+    border: solid grey 1px;
+    background-color: rgb(0,0,0,0.3);
+}
+.grey {
+    font-size: 100%;
+    border-radius: 5px;
+    font-family: 'Almendra SC', Courier, monospace;
+    font-weight: bold;
+    width: 100%;
+    color: #330;
+    border: solid grey 1px;
+    background-color: rgb(255, 255, 255, 0.5);
+}
+.green {
+    font-size: 100%;
+    border-radius: 5px;
+    font-family: 'Almendra SC', Courier, monospace;
+    font-weight: bold;
+    width: 100%;
+    color: #cfc8b0;
+    border: solid grey 1px;
+    background-color: rgba(1, 118, 32, 0.6);
+}
+.red {
+    font-size: 100%;
+    border-radius: 5px;
+    font-family: 'Almendra SC', Courier, monospace;
+    font-weight: bold;
+    width: 100%;
+    color: #cfc8b0;
+    border: solid grey 1px;
+    background-color: rgba(118, 1, 1, 0.6);
+}
+.fundo{
+    background-image: url("./img/palimpsesto.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+.cowries{
+    background-image: url("./img/cowries.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+.chita{
+    background-image: url("./img/chita.jpg");
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: fixed;
+}
+.pergaminho{
+    background-image: url("./img/pergaminho.png");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+.biblioteca{
+    background-image: url("./img/biblioteca.jpg");
+    background-size: cover;
+    background-repeat: repeat;
+    background-position: center center;
+    background-attachment: scroll;
+}
+.bege{
+    background-color: #cfc8b0;
+}
+.dropdown-menu{
+    background-color: rgb(0,0,0,0);
+    border: 0px;
+}
+img{
+    width: 100%;
+}
+.small {
+    width: 50%;
+}
+.img2 {
+    width: 70%;
+}
+.icon {
+    width: 10%;
+}
+.height {
+    width: auto;
+    height: 100%
+}
+a {
+    color: darkgoldenrod;
+    text-decoration: none;
+    font-weight: bold;
+}
+a:hover{
+    color: blue;
+    text-decoration: none;
+    font-weight: bold;
+}
+.card{
+    background-color: #cfc8b0;
+    color: #330;
+}
+.buzio {
+    width: 20px;
+}
+.a-red{
+    color: #900;
+}
+.a-green{
+    color: green;
+}
+.a-grey{
+    color: grey;
+}
+.a-gold{
+    color: darkgoldenrod;
+}
+.transparent{
+    background-color: rgb(0,0,0,0);
+}
+.navbar-toggler{
+    width: auto;
+}
+  .centered {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+  .bottom {
+    position: absolute;
+    top: 75%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+  }
+.corners {
+    border-radius: 25px;
+}
+.indent {
+    text-indent: 30%;
+  }
