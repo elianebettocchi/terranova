@@ -44,7 +44,7 @@ body {
             width: 180px;
             height: 42px;
         }
-         #combat {
+         #skill {
             top: 420px;       
             left: 30px;       
             width: 354px;      
@@ -140,7 +140,7 @@ body {
             cursor: pointer;
             font-weight: bold;
             font-size: 14px;
-            background-color: #666;
+            background-color: darkgoldenrod;
             color: white;
             box-shadow: 0 4px 12px rgba(73, 73, 73, 0.2);
             transition: transform 0.1s, background-color 0.2s;
