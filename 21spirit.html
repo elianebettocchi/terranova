@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fill and Download Card</title>
+    
+    <!-- Include Google Fonts: Almendra SC -->
+    <link rel="preconnect" href="https://googleapis.com">
+    <link rel="preconnect" href="https://gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css?family=Almendra SC" rel="stylesheet" type="text/css">
+    <link rel="shortcut icon" href="https://elianebettocchi.github.io/terranova/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="21.css">
+    <!-- Include html2canvas library from CDN -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js"></script>
+<!-- Your local script goes directly underneath -->
+<script src="script.js"></script>
+</head>
+<body>
+
+        <!-- Target module captured for transparent generation -->
+        <div id="captureArea" class="form-container">
+            
+            <!-- Dropdown Selection -->
+            <div id="people" class="absolute-field">
+                <select id="people" name="people" class="invisible-input" required>
+                    <option value="" disabled selected hidden></option> 
+                    <option value="duergor">duergor</option>
+                    <option value="duerguelf">duerguelfe/duerguelf</option>
+                    <option value="duergan">duergane/duergan</option>
+                    <option value="duerorc">duerorque/duerorc</option>
+                    <option value="elf">elfe/elf</option>
+                    <option value="elfan">elfan/elfano</option>
+                    <option value="human">humane/human</option>
+                    <option value="orc">native/orc</option>
+                    <option value="orcan">orcane/orcan</option>
+                    <option value="orquelf">orquelfe/orquelf</option>
+                    <option value="halfling">pequenine/halfling</option>
+                </select>
+            </div>
+            <div id="skill" class="absolute-field">
+                <select id="category" name="category" class="invisible-input" required>
+                    <option value="" disabled selected hidden></option>  
+                    <option value="one">administração/administration</option>
+                    <option value="two">agricultura/agriculture</option>
+                    <option value="three">artesanato/crafts</option>
+                    <option value="four">comercio/commerce</option>
+                    <option value="five">engenharia/engineering</option>
+                    <option value="six">curandeirismo/healing</option>
+                    <option value="seven">extrativismo/extractivism</option>
+                    <option value="eight">náutica/nautical</option>
+                    <option value="nine">trabalho-doméstico/housework</option>
+                    <option value="ten">treinar-animais/animal-training</option>
+                </select>
+            </div>
+             <div id="devotion" class="absolute-field">
+                <select id="devotion" name="devotion" class="invisible-input" required>
+                    <option value="" disabled selected hidden></option> 
+                    <option value="deities">divindades/deities</option>
+                    <option value="elements">elementos/elements</option>
+                    <option value="xamanism">xamanismo/xamanism</option>
+                    <option value="none">nenhuma/none</option>
+                </select>
+            </div>
+            <div id="valor" class="absolute-field">
+                <select id="valor" name="valor" class="invisible-input" required>
+                    <option value="" disabled selected hidden></option>
+                    <option value="ousadia">ousadia/boldness</option>
+                    <option value="sagacidade">sagacidade/wit</option>
+                </select>
+            </div>
+             <div id="desvalor" class="absolute-field">
+                <select id="desvalor" name="desvalor" class="invisible-input" required>
+                    <option value="" disabled selected hidden></option> 
+                    <option value="avareza">avareza/avarice</option>
+                    <option value="cinismo">cinismo/cynicism</option>
+                    <option value="falsidade">falsidade/falsehood</option>
+                    <option value="frieza">frieza/coldness</option>
+                    <option value="ganancia">ganancia/greed</option>
+                    <option value="imprudencia">imprudencia/recklesness</option>
+                    <option value="obssessao">obssessão/obssession</option>
+                    <option value="prepotencia">prepotencia/bossiness</option>
+                </select>
+            </div>
+
+            <!-- Text Input -->
+            <div id="nome" class="absolute-field">
+                <input type="text" id="nome" name="nome" class="invisible-input" required>
+            </div> 
+            <div id="place" class="absolute-field">
+                <input type="text" id="place" name="place" class="invisible-input" required>
+            </div>
+            <div id="other" class="absolute-field">
+                <input type="text" id="other" name="other" class="invisible-input" required>
+            </div>
+
+             <!-- Radio Input -->
+            <div id="range" class="absolute-field">
+                <input type="radio" id="fixed" name="range" class="invisible-input" required>
+                <input type="radio" id="roamer" name="range" class="invisible-input" required>
+            </div>
+        </div>
+        <!-- The control button is linked seamlessly to the HTML form structure above -->
+        <div class="control-panel">
+             <button id="download-btn">Download Card</button>
+        </div>
+   
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+</body>
+</html>
