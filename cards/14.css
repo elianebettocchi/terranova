@@ -38,12 +38,6 @@ body {
             position: absolute;
             box-sizing: border-box;
         }
-        #people {
-            top: 287px;       
-            left: 115px;
-            width: 180px;
-            height: 42px;
-        }
          #skill {
             top: 420px;       
             left: 30px;       
@@ -69,10 +63,16 @@ body {
             height: 42px;
         }
         #nome {
-            top: 265px;       
+            top: 273px;       
             left: 115px;
             width: 200px;
-            height: 42px;
+            height: 22px;
+        }
+        #people {
+            top: 295px;       
+            left: 115px;
+            width: 180px;
+            height: 22px;
         }
         #place {
             top: 310px;       
